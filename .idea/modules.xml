@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/customize-spring-ioc-aop/customize-spring-ioc-aop.iml" filepath="$PROJECT_DIR$/customize-spring-ioc-aop/customize-spring-ioc-aop.iml" />
       <module fileurl="file://$PROJECT_DIR$/super-spring.iml" filepath="$PROJECT_DIR$/super-spring.iml" />
     </modules>
   </component>
