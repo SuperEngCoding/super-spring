@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--跟标签beans，里面配置一个又一个的bean子标签，每一个bean子标签都代表一个类的配置-->
+<beans>
+    <!--id标识对象，class是类的全限定类名-->
+    <bean id="orderDao" class="com.customize.spring.dao.impl.OrderDaoImpl">
+    </bean>
+
+    <bean id="stockDao" class="com.customize.spring.dao.impl.StockDaoImpl">
+    </bean>
+
+    <bean id="orderService" class="com.customize.spring.service.impl.OrderServiceImpl">
+        <!--通过set方法注入-->
+        <property name="setOrderDao" ref="orderDao"></property>
+        <property name="setStockDao" ref="stockDao"></property>
+    </bean>
+
+
+<!--    &lt;!&ndash;配置新增的三个Bean&ndash;&gt;-->
+<!--    <bean id="connectionUtils" class="com.lagou.edu.utils.ConnectionUtils"></bean>-->
+
+<!--    &lt;!&ndash;事务管理器&ndash;&gt;-->
+<!--    <bean id="transactionManager" class="com.lagou.edu.utils.TransactionManager">-->
+<!--        <property name="ConnectionUtils" ref="connectionUtils"/>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;代理对象工厂&ndash;&gt;-->
+<!--    <bean id="proxyFactory" class="com.lagou.edu.factory.ProxyFactory">-->
+<!--        <property name="TransactionManager" ref="transactionManager"/>-->
+<!--    </bean>-->
+</beans>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="customize-spring-ioc-aop:war">
+    <output-path>$PROJECT_DIR$/customize-spring-ioc-aop/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>customize-spring-ioc-aop</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="customize-spring-ioc-aop-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="customize-spring-ioc-aop:war exploded" />
+    </root>
+  </artifact>
+</component>
