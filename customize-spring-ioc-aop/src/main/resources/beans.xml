@@ -13,18 +13,4 @@
         <property name="setOrderDao" ref="orderDao"></property>
         <property name="setStockDao" ref="stockDao"></property>
     </bean>
-
-
-<!--    &lt;!&ndash;配置新增的三个Bean&ndash;&gt;-->
-<!--    <bean id="connectionUtils" class="com.lagou.edu.utils.ConnectionUtils"></bean>-->
-
-<!--    &lt;!&ndash;事务管理器&ndash;&gt;-->
-<!--    <bean id="transactionManager" class="com.lagou.edu.utils.TransactionManager">-->
-<!--        <property name="ConnectionUtils" ref="connectionUtils"/>-->
-<!--    </bean>-->
-
-<!--    &lt;!&ndash;代理对象工厂&ndash;&gt;-->
-<!--    <bean id="proxyFactory" class="com.lagou.edu.factory.ProxyFactory">-->
-<!--        <property name="TransactionManager" ref="transactionManager"/>-->
-<!--    </bean>-->
 </beans>

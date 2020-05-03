@@ -46,6 +46,7 @@ public class OrderServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        resp.setContentType("application/json;charset=utf-8");
         resp.getWriter().print("下单成功");
     }
 }
